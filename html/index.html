@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação de Camões</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apresentação de Luís de Camões</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('introduction')">Introdução</a></li>
+                <li><a href="#" onclick="showSection('stanzas')">Estrofes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction" class="content-section">
+            <h2>Introdução</h2>
+            <button onclick="showIntro('camoes')">Introdução sobre Luís de Camões</button>
+            <button onclick="showIntro('lusiadas')">Introdução sobre Os Lusíadas</button>
+            <div id="introCamoes" class="intro-content">
+                <p>Luís Vaz de Camões é considerado um dos maiores poetas da literatura portuguesa. Suas obras, especialmente "Os Lusíadas", são conhecidas pela sua riqueza linguística e métrica impecável.</p>
+            </div>
+            <div id="introLusiadas" class="intro-content">
+                <p>"Os Lusíadas" é uma epopeia portuguesa escrita por Luís de Camões. Publicada em 1572, a obra é composta por dez cantos e narra a história das navegações portuguesas, especialmente a viagem de Vasco da Gama à Índia.</p>
+            </div>
+        </section>
+        <section id="stanzas" class="content-section">
+            <h2>Estrofes</h2>
+            <button onclick="showGeneralInfo()">Ver Info Geral</button>
+            <div id="generalInfo" class="general-info">
+                <p>Informação geral sobre as estrofes...</p>
+            </div>
+            <div class="stanza-container">
+                <div class="stanza">
+                    <h3>V, 97</h3>
+                    <p>"Enfim, não houve forte capitão,<br>
+                    Que não fosse também douto e ciente,<br>
+                    Da Lácia, Grega, ou Bárbara nação,<br>
+                    Senão da Portuguesa tão somente.<br>
+                    Sem vergonha o não digo, que a razão<br>
+                    De algum não ser por versos excelente,<br>
+                    É não se ver prezado o verso e rima,<br>
+                    Porque, quem não sabe arte, não na estima."</p>
+                    <button onclick="showAnalysis(1)">Análise</button>
+                    <div class="analysis" id="analysis1">
+                        <p>Aqui Camões exalta os feitos dos navegadores portugueses e suas conquistas marítimas, começando com uma referência clássica a épicos como os de Homero e Virgílio.</p>
+                    </div>
+                </div>
+                <div class="stanza">
+                    <h3>V, 98</h3>
+                    <p>"Por isso, e não por falta de natura,<br>
+                    Não há também Virgílios nem Homeros;<br>
+                    Nem haverá, se este costume dura,<br>
+                    Pios Eneias, nem Aquiles feros.<br>
+                    Mas o pior de tudo é que a ventura<br>
+                    Tão ásperos os fez, e tão austeros,<br>
+                    Tão rudos, e de engenho tão remisso,<br>
+                    Que a muitos lhe dá pouco, ou nada disso."</p>
+                    <button onclick="showAnalysis(2)">Análise</button>
+                    <div class="analysis" id="analysis2">
+                        <p>Nesta estrofe, Camões descreve a fundação de um novo reino em terras distantes, enfatizando a importância da expansão e colonização portuguesa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stanza-container">
+                <div class="stanza">
+                    <h3>V, 99</h3>
+                    <p>"As Musas agradeça o nosso Gama<br>
+                    o Muito amor da Pátria, que as obriga<br>
+                    A dar aos seus na lira nome e fama<br>
+                    De toda a ilustro e bélica fadiga:<br>
+                    Que ele, nem quem na estirpe seu se chama,<br>
+                    Calíope não tem por tão amiga,<br>
+                    Nem as filhas do Tejo, que deixassem<br>
+                    As telas douro fino, e que o cantassem."</p>
+                    <button onclick="showAnalysis(3)">Análise</button>
+                    <div class="analysis" id="analysis3">
+                        <p>Nesta estrofe, Camões descreve a fundação de um novo reino em terras distantes, enfatizando a importância da expansão e colonização portuguesa.</p>
+                    </div>
+                </div>
+                <div class="stanza">
+                    <h3>V, 100</h3>
+                    <p>"Porque o amor fraterno e puro gosto<br>
+                    De dar a todo o Lusitano feito<br>
+                    Seu louvor, é somente o pressuposto<br>
+                    Das Tágides gentis, e seu respeito.<br>
+                    Porém não deixe enfim de ter disposto<br>
+                    Ninguém a grandes obras sempre o peito,<br>
+                    Que por esta, ou por outra qualquer via,<br>
+                    Não perderá seu preço, e sua valia."</p>
+                    <button onclick="showAnalysis(4)">Análise</button>
+                    <div class="analysis" id="analysis4">
+                        <p>Nesta estrofe, Camões descreve a fundação de um novo reino em terras distantes, enfatizando a importância da expansão e colonização portuguesa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
