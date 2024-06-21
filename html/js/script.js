@@ -4,6 +4,7 @@ function showSection(sectionId) {
         section.style.display = 'none';
     });
     document.getElementById(sectionId).style.display = 'block';
+    hideInitialScreen(); // Adicionada para esconder a tela inicial
 }
 
 function toggleDisplay(id) {
@@ -16,16 +17,19 @@ function toggleDisplay(id) {
 }
 
 function showIntro(topic) {
-    const introContents = document.querySelectorAll('.intro-content');
-    introContents.forEach(content => {
-        content.style.display = 'none';
-    });
-    if (topic === 'camoes') {
-        const camoesContent = document.getElementById('introCamoes');
-        if (camoesContent.style.display === 'none' || !camoesContent.style.display) {
-            camoesContent.style.display = 'block';
-        } else {
-            camoesContent.style.display = 'none';
-        }
+    const introContent = document.getElementById(`intro${capitalizeFirstLetter(topic)}`);
+    if (introContent.style.display === 'none' || !introContent.style.display) {
+        introContent.style.display = 'block';
+    } else {
+        introContent.style.display = 'none';
     }
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function hideInitialScreen() {
+    const initialScreen = document.getElementById('initialScreen');
+    initialScreen.style.display = 'none';
 }

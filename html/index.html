@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div id="initialScreen" class="initial-screen">
+        <h1>Apresentação de Português</h1>
+    </div>
     <header>
         <h1>Apresentação de Luís de Camões</h1>
         <nav>
@@ -21,25 +24,42 @@
             <h2>Introdução</h2>
             <button onclick="showIntro('camoes')">Introdução sobre Luís de Camões</button>
             <div id="introCamoes" class="intro-content">
-                <button onclick="toggleDisplay('life')">Vida</button>
+                <button onclick="toggleDisplay('life')">Vida e Contexto Histórico</button>
                 <div id="life" class="intro-content-detail">
-                    <p>Informação sobre a vida de Luís de Camões...</p>
+                    <p>Luís de Camões nasceu em Lisboa, provavelmente em 1524, em uma família de pequena nobreza. Pouco se sabe sobre sua juventude, mas acredita-se que tenha estudado em Coimbra, onde teria recebido uma educação clássica.
+                    Camões viveu durante o Renascimento, uma época de grande expansão cultural e geográfica para Portugal. Ele testemunhou o auge do Império Português, com as descobertas de novas terras e rotas comerciais, o que influenciou profundamente sua obra.</p>
                 </div>
-                <button onclick="toggleDisplay('works')">Obras</button>
+                <button onclick="toggleDisplay('works')">"Aventuras"</button>
                 <div id="works" class="intro-content-detail">
-                    <p>Informação sobre as obras de Luís de Camões...</p>
+                    <p>Por volta de 1547, Camões foi exilado de Lisboa, possivelmente por razões amorosas e políticas. Ele se alistou no exército português e lutou no norte da África, onde perdeu um olho em batalha. 
+                    Após seu retorno a Lisboa, envolveu-se em uma briga e foi preso, sendo posteriormente enviado para a Índia como punição.</p>
+                    <p>Na Índia, Camões teve várias aventuras, viajando por lugares como Goa, Moçambique e a China. Durante esse período, ele escreveu grande parte de "Os Lusíadas". A lenda diz que Camões sobreviveu a um naufrágio, salvando apenas o manuscrito de sua obra-prima.</p>
                 </div>
-                <button onclick="toggleDisplay('style')">Estilo Literário</button>
+                <button onclick="toggleDisplay('style')">Os Lusíadas</button>
                 <div id="style" class="intro-content-detail">
-                    <p>Informação sobre o estilo literário de Luís de Camões...</p>
+                    <p>Publicado em 1572, "Os Lusíadas" é um poema épico que narra as aventuras de Vasco da Gama e a descoberta do caminho marítimo para a Índia. Dividido em dez cantos, o poema combina história, mitologia e a visão pessoal de Camões sobre o destino de Portugal. "Os Lusíadas" é celebrado por sua rica linguagem, complexidade narrativa e profundidade filosófica. Ele exalta os feitos heroicos dos portugueses e reflete sobre a condição humana, o papel do destino e a glória e tragédia da expansão imperial.</p>
                 </div>
-                <button onclick="toggleDisplay('influence')">Influência</button>
+                <button onclick="toggleDisplay('influence')">Poesia Lírica</button>
                 <div id="influence" class="intro-content-detail">
-                    <p>Informação sobre a influência de Luís de Camões...</p>
+                    <p>Além de "Os Lusíadas", Camões escreveu uma vasta quantidade de poesia lírica, incluindo sonetos, elegias, canções e redondilhas. Seus poemas líricos são marcados pela introspecção, pela intensidade emocional e pela habilidade técnica. Camões abordou temas como o amor, a saudade, a passagem do tempo e a condição humana, sempre com uma profundidade e sensibilidade únicas.</p>
                 </div>
-                <button onclick="toggleDisplay('legacy')">Legado</button>
+                <button onclick="toggleDisplay('legacy')">Últimos Anos </button>
                 <div id="legacy" class="intro-content-detail">
-                    <p>Informação sobre o legado de Luís de Camões...</p>
+                    <p>Camões retornou a Lisboa por volta de 1570, onde encontrou dificuldades financeiras e uma saúde debilitada. Ele faleceu em 1580, no mesmo ano em que Portugal perdeu sua independência para a Espanha. Apesar de suas dificuldades pessoais, o legado literário de Camões foi imenso.</p>
+                    <p>Seu impacto na literatura portuguesa e mundial é inegável. "Os Lusíadas" é estudado e admirado em todo o mundo, e sua poesia lírica continua a ser apreciada por sua beleza e profundidade. Camões é frequentemente comparado a outros grandes poetas épicos, como Homero, Virgílio e Dante. Em Portugal, ele é uma figura nacional, simbolizando o espírito aventureiro e a glória histórica do país.</p>
+                    <p>Luís Vaz de Camões permanece uma figura central na cultura e literatura portuguesas, um poeta cuja obra transcende o tempo e continua a inspirar gerações de leitores e escritores. Sua vida de aventuras e adversidades, combinada com seu gênio literário, faz dele um dos grandes nomes da literatura universal.</p>
+                </div>
+                <button onclick="toggleDisplay('tudo')">Informação completa</button>
+                <div id="tudo" class="intro-content-detail">
+                   <p>Luís Vaz de Camões (c. 1524-1580) foi um dos maiores poetas da língua portuguesa e uma das figuras mais importantes da literatura mundial. Sua obra-prima, "Os Lusíadas", é um épico que celebra a era das descobertas portuguesas e é considerada uma das obras fundamentais da literatura ocidental.</p>
+                    <p>Luís de Camões nasceu em Lisboa, provavelmente em 1524, em uma família de pequena nobreza. Pouco se sabe sobre sua juventude, mas acredita-se que tenha estudado em Coimbra, onde teria recebido uma educação clássica. Camões viveu durante o Renascimento, uma época de grande expansão cultural e geográfica para Portugal. Ele testemunhou o auge do Império Português, com as descobertas de novas terras e rotas comerciais, o que influenciou profundamente sua obra.</p>
+                    <p>Por volta de 1547, Camões foi exilado de Lisboa, possivelmente por razões amorosas e políticas. Ele se alistou no exército português e lutou no norte da África, onde perdeu um olho em batalha. Após seu retorno a Lisboa, envolveu-se em uma briga e foi preso, sendo posteriormente enviado para a Índia como punição.</p>
+                    <p>Na Índia, Camões teve várias aventuras, viajando por lugares como Goa, Moçambique e a China. Durante esse período, ele escreveu grande parte de "Os Lusíadas". A lenda diz que Camões sobreviveu a um naufrágio, salvando apenas o manuscrito de sua obra-prima.</p>
+                    <p>Publicado em 1572, "Os Lusíadas" é um poema épico que narra as aventuras de Vasco da Gama e a descoberta do caminho marítimo para a Índia. Dividido em dez cantos, o poema combina história, mitologia e a visão pessoal de Camões sobre o destino de Portugal. "Os Lusíadas" é celebrado por sua rica linguagem, complexidade narrativa e profundidade filosófica. Ele exalta os feitos heroicos dos portugueses e reflete sobre a condição humana, o papel do destino e a glória e tragédia da expansão imperial.</p>
+                    <p>Além de "Os Lusíadas", Camões escreveu uma vasta quantidade de poesia lírica, incluindo sonetos, elegias, canções e redondilhas. Seus poemas líricos são marcados pela introspecção, pela intensidade emocional e pela habilidade técnica. Camões abordou temas como o amor, a saudade, a passagem do tempo e a condição humana, sempre com uma profundidade e sensibilidade únicas.</p>
+                    <p>Camões retornou a Lisboa por volta de 1570, onde encontrou dificuldades financeiras e uma saúde debilitada. Ele faleceu em 1580, no mesmo ano em que Portugal perdeu sua independência para a Espanha. Apesar de suas dificuldades pessoais, o legado literário de Camões foi imenso.</p>
+                    <p>Seu impacto na literatura portuguesa e mundial é inegável. "Os Lusíadas" é estudado e admirado em todo o mundo, e sua poesia lírica continua a ser apreciada por sua beleza e profundidade. Camões é frequentemente comparado a outros grandes poetas épicos, como Homero, Virgílio e Dante. Em Portugal, ele é uma figura nacional, simbolizando o espírito aventureiro e a glória histórica do país.</p>
+                    <p>Luís Vaz de Camões permanece uma figura central na cultura e literatura portuguesas, um poeta cuja obra transcende o tempo e continua a inspirar gerações de leitores e escritores. Sua vida de aventuras e adversidades, combinada com seu gênio literário, faz dele um dos grandes nomes da literatura universal.</p>
                 </div>
             </div>
         </section>
@@ -73,6 +93,22 @@
                     Porque, quem não sabe arte, não na estima."</p>
                     <button onclick="toggleDisplay('analysis1')">Análise</button>
                     <div class="analysis" id="analysis1">
+                        <button onclick="toggleDisplay('esquema')">Esquema Rimático</button>
+                        <div id="generalEsquema" class="general-content">
+                            <p>Informação sobre a Estância...</p>
+                        </div>
+                        <button onclick="toggleDisplay('planos')">Planos do Poeta</button>
+                        <div id="generalEstancia" class="general-content">
+                            <p>Informação sobre a Estância...</p>
+                        </div>
+                        <button onclick="toggleDisplay('silabas')">Silabas Métricas</button>
+                        <div id="generalVersos" class="general-content">
+                            <p>Informação sobre os Versos...</p>
+                        </div>
+                        <button onclick="toggleDisplay('explicacao')">Explicação da estrofe</button>
+                        <div id="generalEsquema" class="general-content">
+                            <p>Informação sobre o Esquema Rimático...</p>
+                        </div>
                         <p>Aqui Camões exalta os feitos dos navegadores portugueses e suas conquistas marítimas, começando com uma referência clássica a épicos como os de Homero e Virgílio.</p>
                     </div>
                 </div>

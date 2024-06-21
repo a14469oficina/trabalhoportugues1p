@@ -12,6 +12,8 @@ header {
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1001; /* Adicionado para sobrepor a tela inicial */
 }
 
 h1 {
@@ -81,13 +83,14 @@ button {
     background: #333;
     color: #fff;
     border: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 10px;
     display: block;
     width: auto;
     text-align: left;
-    font-size: 12px;
+    font-size: 15px;
+    border-radius: 15px; /* Adicionado para bordas arredondadas */
 }
 
 button:hover {
@@ -96,4 +99,22 @@ button:hover {
 
 .general-info, .intro-content {
     display: none;
+}
+
+.initial-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.initial-screen h1 {
+    font-size: 32px;
+    color: #333;
 }
