@@ -20,19 +20,45 @@
         <section id="introduction" class="content-section">
             <h2>Introdução</h2>
             <button onclick="showIntro('camoes')">Introdução sobre Luís de Camões</button>
-            <button onclick="showIntro('lusiadas')">Introdução sobre Os Lusíadas</button>
             <div id="introCamoes" class="intro-content">
-                <p>Luís Vaz de Camões é considerado um dos maiores poetas da literatura portuguesa. Suas obras, especialmente "Os Lusíadas", são conhecidas pela sua riqueza linguística e métrica impecável.</p>
-            </div>
-            <div id="introLusiadas" class="intro-content">
-                <p>"Os Lusíadas" é uma epopeia portuguesa escrita por Luís de Camões. Publicada em 1572, a obra é composta por dez cantos e narra a história das navegações portuguesas, especialmente a viagem de Vasco da Gama à Índia.</p>
+                <button onclick="toggleDisplay('life')">Vida</button>
+                <div id="life" class="intro-content-detail">
+                    <p>Informação sobre a vida de Luís de Camões...</p>
+                </div>
+                <button onclick="toggleDisplay('works')">Obras</button>
+                <div id="works" class="intro-content-detail">
+                    <p>Informação sobre as obras de Luís de Camões...</p>
+                </div>
+                <button onclick="toggleDisplay('style')">Estilo Literário</button>
+                <div id="style" class="intro-content-detail">
+                    <p>Informação sobre o estilo literário de Luís de Camões...</p>
+                </div>
+                <button onclick="toggleDisplay('influence')">Influência</button>
+                <div id="influence" class="intro-content-detail">
+                    <p>Informação sobre a influência de Luís de Camões...</p>
+                </div>
+                <button onclick="toggleDisplay('legacy')">Legado</button>
+                <div id="legacy" class="intro-content-detail">
+                    <p>Informação sobre o legado de Luís de Camões...</p>
+                </div>
             </div>
         </section>
         <section id="stanzas" class="content-section">
             <h2>Estrofes</h2>
-            <button onclick="showGeneralInfo()">Ver Info Geral</button>
+            <button onclick="toggleDisplay('generalInfo')">Ver Info Geral</button>
             <div id="generalInfo" class="general-info">
-                <p>Informação geral sobre as estrofes...</p>
+                <button onclick="toggleDisplay('generalEstancia')">Estância</button>
+                <div id="generalEstancia" class="general-content">
+                    <p>Informação sobre a Estância...</p>
+                </div>
+                <button onclick="toggleDisplay('generalVersos')">Versos</button>
+                <div id="generalVersos" class="general-content">
+                    <p>Informação sobre os Versos...</p>
+                </div>
+                <button onclick="toggleDisplay('generalEsquema')">Esquema Rimático</button>
+                <div id="generalEsquema" class="general-content">
+                    <p>Informação sobre o Esquema Rimático...</p>
+                </div>
             </div>
             <div class="stanza-container">
                 <div class="stanza">
@@ -45,7 +71,7 @@
                     De algum não ser por versos excelente,<br>
                     É não se ver prezado o verso e rima,<br>
                     Porque, quem não sabe arte, não na estima."</p>
-                    <button onclick="showAnalysis(1)">Análise</button>
+                    <button onclick="toggleDisplay('analysis1')">Análise</button>
                     <div class="analysis" id="analysis1">
                         <p>Aqui Camões exalta os feitos dos navegadores portugueses e suas conquistas marítimas, começando com uma referência clássica a épicos como os de Homero e Virgílio.</p>
                     </div>
@@ -60,7 +86,7 @@
                     Tão ásperos os fez, e tão austeros,<br>
                     Tão rudos, e de engenho tão remisso,<br>
                     Que a muitos lhe dá pouco, ou nada disso."</p>
-                    <button onclick="showAnalysis(2)">Análise</button>
+                    <button onclick="toggleDisplay('analysis2')">Análise</button>
                     <div class="analysis" id="analysis2">
                         <p>Nesta estrofe, Camões descreve a fundação de um novo reino em terras distantes, enfatizando a importância da expansão e colonização portuguesa.</p>
                     </div>
@@ -77,7 +103,7 @@
                     Calíope não tem por tão amiga,<br>
                     Nem as filhas do Tejo, que deixassem<br>
                     As telas douro fino, e que o cantassem."</p>
-                    <button onclick="showAnalysis(3)">Análise</button>
+                    <button onclick="toggleDisplay('analysis3')">Análise</button>
                     <div class="analysis" id="analysis3">
                         <p>Nesta estrofe, Camões descreve a fundação de um novo reino em terras distantes, enfatizando a importância da expansão e colonização portuguesa.</p>
                     </div>
@@ -92,7 +118,7 @@
                     Ninguém a grandes obras sempre o peito,<br>
                     Que por esta, ou por outra qualquer via,<br>
                     Não perderá seu preço, e sua valia."</p>
-                    <button onclick="showAnalysis(4)">Análise</button>
+                    <button onclick="toggleDisplay('analysis4')">Análise</button>
                     <div class="analysis" id="analysis4">
                         <p>Nesta estrofe, Camões descreve a fundação de um novo reino em terras distantes, enfatizando a importância da expansão e colonização portuguesa.</p>
                     </div>

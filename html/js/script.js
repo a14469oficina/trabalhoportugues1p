@@ -1,7 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    showSection('introduction'); // Mostrar introdução por padrão
-});
-
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
@@ -10,21 +6,12 @@ function showSection(sectionId) {
     document.getElementById(sectionId).style.display = 'block';
 }
 
-function showAnalysis(stanzaNumber) {
-    const analysis = document.getElementById(`analysis${stanzaNumber}`);
-    if (analysis.style.display === 'none' || !analysis.style.display) {
-        analysis.style.display = 'block';
+function toggleDisplay(id) {
+    const element = document.getElementById(id);
+    if (element.style.display === 'none' || !element.style.display) {
+        element.style.display = 'block';
     } else {
-        analysis.style.display = 'none';
-    }
-}
-
-function showGeneralInfo() {
-    const generalInfo = document.getElementById('generalInfo');
-    if (generalInfo.style.display === 'none' || !generalInfo.style.display) {
-        generalInfo.style.display = 'block';
-    } else {
-        generalInfo.style.display = 'none';
+        element.style.display = 'none';
     }
 }
 
@@ -34,8 +21,11 @@ function showIntro(topic) {
         content.style.display = 'none';
     });
     if (topic === 'camoes') {
-        document.getElementById('introCamoes').style.display = 'block';
-    } else if (topic === 'lusiadas') {
-        document.getElementById('introLusiadas').style.display = 'block';
+        const camoesContent = document.getElementById('introCamoes');
+        if (camoesContent.style.display === 'none' || !camoesContent.style.display) {
+            camoesContent.style.display = 'block';
+        } else {
+            camoesContent.style.display = 'none';
+        }
     }
 }

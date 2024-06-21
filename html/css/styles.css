@@ -64,46 +64,36 @@ main {
 .stanza {
     background: #fff;
     border: 1px solid #ddd;
-    margin: 10px;
     padding: 10px;
-    border-radius: 5px;
     width: 48%;
+    margin-bottom: 10px;
+}
+
+.analysis, .intro-content-detail, .general-content {
+    display: none;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
 }
 
 button {
     background: #333;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
+    display: block;
+    width: auto;
+    text-align: left;
+    font-size: 12px;
 }
 
 button:hover {
     background: #555;
 }
 
-.analysis {
+.general-info, .intro-content {
     display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background: #f9f9f9;
-    border-left: 3px solid #333;
-}
-
-.general-info {
-    display: none;
-    background: #f9f9f9;
-    padding: 10px;
-    border-left: 3px solid #333;
-    margin-top: 10px;
-}
-
-.intro-content {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background: #f9f9f9;
-    border-left: 3px solid #333;
 }
