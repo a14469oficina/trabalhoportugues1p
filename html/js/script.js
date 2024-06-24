@@ -33,3 +33,7 @@ function hideInitialScreen() {
     const initialScreen = document.getElementById('initialScreen');
     initialScreen.style.display = 'none';
 }
+
+function showConclusion() {
+    showSection('conclusion');
+}
